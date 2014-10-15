@@ -1,0 +1,12 @@
+<c:mkcalendar xmlns:c="urn:ietf:params:xml:ns:caldav"
+              xmlns:card="urn:ietf:params:xml:ns:carddav"
+              xmlns:cs="http://calendarserver.org/ns/"
+              xmlns:d="DAV:">
+  <d:set>
+    <d:prop>
+      {{#each props}}
+        {{prop this}}
+      {{/each}}
+    </d:prop>
+  </d:set>
+</c:mkcalendar>
